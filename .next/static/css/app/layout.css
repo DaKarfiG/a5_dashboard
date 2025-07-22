@@ -1,0 +1,289 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./public/styles.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+/* Dashboard Header Styles */
+.dashboard-header-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+/* Language Switcher Button Styles */
+.language-switcher-btn {
+    border-radius: 20px;
+}
+
+/* Quick Stats Metric Card Styles */
+.dashboard-metric-card {
+    transition: transform 0.2s ease-in-out;
+}
+.dashboard-metric-card:hover {
+    transform: translateY(-2px);
+}
+
+/* Chart Placeholder Styles */
+.dashboard-chart-placeholder {
+    height: 400px;
+    background-color: #f8f9fa;
+    border: 2px dashed #dee2e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+    font-size: 1.1rem;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Chart Controls Styles */
+.dashboard-chart-controls {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+/* Card Consistency */
+.dashboard-card-fullheight {
+    height: 100%;
+}
+
+.dashboard-card-body-centered {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 0;
+}
+
+.dashboard-card-gradient-inner > .card-body:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Responsive Row Gutter */
+.dashboard-row-gutter {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+.dashboard-col-scatter {
+
+}
+.dashboard-col-pie {
+   
+}
+.dashboard-col-weight-sleep {
+ 
+}
+.dashboard-col-training-volume {
+   
+}
+
+/* Match height of training volume chart to weight & sleep chart (height only) */
+.dashboard-col-weight-sleep .dashboard-card-body-centered,
+.dashboard-col-training-volume .dashboard-card-body-centered {
+    height: 400px;
+    min-height: 400px;
+    max-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dashboard-card-body-centered canvas {
+    height: 100% !important;
+    max-height: 100% !important;
+}
+
+/* Footer background same as header */
+.dashboard-footer-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+/* Metric card border with header gradient */
+.dashboard-metric-card-border {
+    border: 2px solid;
+    border-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-image-slice: 1;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.08), 0 1.5px 6px rgba(118, 75, 162, 0.06);
+    background: #f9fafc;
+}
+
+/* Dashboard card gradient background for main dashboard-col-* cards */
+.dashboard-card-gradient-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+/* White inner area for card content */
+.dashboard-card-gradient-inner {
+    background: #fff;
+    color: #222;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.dashboard-bar-chart-compact {
+    height: 180px !important;
+    max-height: 200px;
+}
+
+/* Move the training volume dropdown further right to avoid overlapping French text */
+.dashboard-col-training-volume .dashboard-chart-controls {
+    margin-left: 100px;
+} 
+
+/* Force both chart columns and cards to be exactly the same height */
+.dashboard-row-gutter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch !important;
+}
+
+.dashboard-col-weight-sleep,
+.dashboard-col-training-volume {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.dashboard-card-fullheight,
+.dashboard-card-gradient-bg {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-card-gradient-inner {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 500px;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: #fff !important;
+    color: #222 !important;
+    margin: 0;
+}
+
+.dashboard-card-body-centered {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 0;
+    height: 300px;
+    align-items: center;
+}
+
+.dashboard-card-body-centered > div {
+    width: 100%;
+    height: 100%;
+}
+
+.dashboard-card-body-centered canvas {
+    height: 100% !important;
+    max-height: 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+} 
+
+/* Center the dropdown in the card controls and style the select */
+.dashboard-chart-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin-bottom: 1rem !important;
+    width: 100%;
+}
+
+.dashboard-chart-controls .form-select,
+.dashboard-chart-controls select.form-select-sm {
+    max-width: 220px;
+    margin: 0.5rem 0;
+    border: 1.5px solid #dee2e6;
+    border-radius: 8px;
+    background: #f8f9fa;
+    box-shadow: none;
+    font-size: 1rem;
+    padding: 0.5rem 2.2rem 0.5rem 0.75rem;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%23999' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+/* Revert dropdown style for weight & sleep trends card (no centering, no extra margin) */
+.dashboard-col-weight-sleep .dashboard-chart-controls {
+    display: block;
+    background: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin-bottom: 0.5rem !important;
+    width: 100%;
+}
+.dashboard-col-weight-sleep .dashboard-chart-controls .form-select,
+.dashboard-col-weight-sleep .dashboard-chart-controls select.form-select-sm {
+    max-width: 180px;
+    margin: 0;
+    border: 1.5px solid #dee2e6;
+    border-radius: 8px;
+    background: #f8f9fa;
+    box-shadow: none;
+    font-size: 0.95rem;
+    padding: 0.25rem 2.2rem 0.25rem 0.75rem;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%23999' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    display: inline-block;
+}
+
+/* Center the dropdown in the bar graph card and reduce margin between subtitle and dropdown */
+.dashboard-col-training-volume .dashboard-chart-controls {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin-bottom: 0.5rem !important;
+    width: 100%;
+}
+.dashboard-col-training-volume .dashboard-chart-controls .form-select,
+.dashboard-col-training-volume .dashboard-chart-controls select.form-select-sm {
+    max-width: 180px;
+    margin: 0.1rem auto 1rem auto;
+    border: 1.5px solid #dee2e6;
+    border-radius: 8px;
+    background: #f8f9fa;
+    box-shadow: none;
+    font-size: 0.95rem;
+    padding: 0.25rem 2.2rem 0.25rem 0.75rem;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%23999' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    display: block;
+} 
+
+/* Ensure card header/subtitle area is always tall enough for both languages */
+.dashboard-card-gradient-inner .card-header {
+    min-height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
